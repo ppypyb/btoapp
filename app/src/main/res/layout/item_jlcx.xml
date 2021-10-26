@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/jlcx_gzdh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:text="告警流水号" />
+
+        <TextView
+            android:id="@+id/jlcx_jjdh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+
+            android:text="13678988871" />
+        <TextView
+            android:id="@+id/jlcx_djrq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:text="13678988871" />
+        <TextView
+            android:id="@+id/jlcx_gwgx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:text="13678988871" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="center_vertical" >
+        <TextView
+            android:id="@+id/jlcx_zpsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_weight="1"
+            android:text="zp" />
+        <TextView
+            android:id="@+id/jlcx_fpsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="fp" />
+        <TextView
+            android:id="@+id/jlcx_cpsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="cp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>

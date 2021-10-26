@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="headTextColor">#ffffff</color>
+    <color name="divider_color">#999999</color>
+    <!-- 查询页面字体color -->
+    <color name="searchKeyTextColor">#373737</color>
+    <color name="searchValueTextColor">#939393</color>
+    <!-- 基站列表表格背景颜色 -->
+    <color name="tableBgColor">#C5DAED</color>
+    <!--首页背景颜色  -->
+    <color name="indexBgColor">#3181BF</color>
+    <color name="white">#FFFFFF</color>
+    <!--列表单击  -->
+    <color name="list_item_click">#C5DAED</color>
+    <color name="list_item_bg">#E8F2FE</color>
+
+    <color name="tab_sel_bg">#E4F4FE</color>
+    <color name="tab_normal_bg">#F8F8F8</color>
+    <color name="black">#000000</color>
+
+    <color name="blue_font">#70a0d4</color>
+    <color name="gray_font">#a3a3a3</color>
+    <color name="hiddlen_panel_custom">#f5f5f5</color>
+
+
+    <color name="gold">#f3cf55</color>
+    <color name="silver">#eeece0</color>
+    <color name="copper">#df894c</color>
+    <color name="normal">#5bb0f0</color>
+
+    <color name="a3">#5dbfee</color>
+    <color name="a2">#f2ce54</color>
+    <color name="a">#19d2d4</color>
+    <color name="noa">#4ddf8f</color>
+
+    <color name="alarm_gcline_type">#93d5f7</color>
+</resources>

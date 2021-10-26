@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+        <TextView
+            style="@style/main_community_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="选择日期" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="4" >
+
+            <com.ultrapower.tomas.ui.wheelview.views.WheelView
+                android:id="@+id/sel_year"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.ultrapower.tomas.ui.wheelview.views.WheelView
+                android:id="@+id/sel_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            <com.ultrapower.tomas.ui.wheelview.views.WheelView
+                android:id="@+id/sel_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+            <com.ultrapower.tomas.ui.wheelview.views.WheelView
+                android:id="@+id/sel_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/datePickCancel"
+                style="@style/main_community_list_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/yuanjiao_gray"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/datePickOk"
+                style="@style/main_community_list_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/yuanjiao_blue"
+                android:text="确定" />
+        </LinearLayout>
+
+</LinearLayout>

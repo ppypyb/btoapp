@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal" >
+    <ImageView
+        android:layout_width="100dp"
+        android:id="@+id/ddxz_cptu"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/default1"
+        android:layout_height="130dp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    <TextView
+        android:id="@+id/ddxz_gzdh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:text="告警流水号" />
+
+        <TextView
+            android:id="@+id/ddxz_jjdh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:text="13678988871" />
+        <TextView
+            android:id="@+id/ddxz_djrq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:text="生产日期" />
+        <TextView
+            android:id="@+id/ddxz_gwgx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:text="材质" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical" >
+        <TextView
+            android:id="@+id/ddxz_zpsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_weight="1"
+            android:text="zp" />
+        <TextView
+            android:id="@+id/ddxz_fpsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="完成日期" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical" >
+        <TextView
+            android:id="@+id/ddxz_pcsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="zp" />
+        <TextView
+            android:id="@+id/ddxz_wcsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="fp" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

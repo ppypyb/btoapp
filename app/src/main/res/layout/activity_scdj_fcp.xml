@@ -1,0 +1,131 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bottomsel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white"
+
+ >
+    <include layout="@layout/title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+
+                android:layout_weight="1"
+                android:text="废品原因"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+
+                android:gravity="center_vertical"
+                android:textSize="@dimen/headThreeTextSize"
+                android:textColor="@color/gray_font"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:layout_weight="1"
+                android:text="数量"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+
+                android:gravity="center_vertical"
+                android:textSize="@dimen/headThreeTextSize"
+                android:textColor="@color/gray_font"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/et_eoms_begion"
+                android:layout_weight="1"
+                android:text="生产工序"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+
+                android:gravity="center_vertical"
+                android:textSize="@dimen/headThreeTextSize"
+                android:textColor="@color/gray_font"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_above="@id/fcpdj_bom"
+            android:layout_below="@id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:id="@+id/ll_dd"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                >
+            </LinearLayout>
+        </ScrollView>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_font"
+            android:layout_height="1px" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:weightSum="2"
+            android:id="@+id/fcpdj_bom"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/scdj_sub_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/btn_save"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="提交"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/scdj_can_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/btn_save"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="取消"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

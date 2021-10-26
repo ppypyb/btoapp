@@ -1,0 +1,200 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:bottomsel="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/et_eoms_begion"
+            android:layout_weight="1"
+            android:text="订单号"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:editable="false"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/headThreeTextSize"
+            android:textColor="@color/gray_font"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/headSecondTextSize"
+            android:textColor="@color/gray_font"
+            android:background="@mipmap/select_with_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"></Spinner>
+        <Button
+            android:id="@+id/btn_eoms_query"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="查询"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@mipmap/btn_chaxun"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"></Button>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_font"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/jl_ddbh"
+
+            android:text="订单号"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:editable="false"
+
+            android:textSize="@dimen/headThreeTextSize"
+            android:textColor="@color/gray_font"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/jl_cpmc"
+
+            android:text="产品名称"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:editable="false"
+
+            android:textSize="@dimen/headThreeTextSize"
+            android:textColor="@color/gray_font"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/jl_bbth"
+
+            android:text="版本图号"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:editable="false"
+
+            android:textSize="@dimen/headThreeTextSize"
+            android:textColor="@color/gray_font"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/jl_cz"
+
+            android:text="材质11"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:editable="false"
+
+            android:textSize="@dimen/headThreeTextSize"
+            android:textColor="@color/gray_font"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/jl_sc"
+            android:text=""
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:editable="false"
+            android:textSize="@dimen/headThreeTextSize"
+            android:textColor="@color/gray_font"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_font"
+            android:layout_height="1px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:weightSum="2"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/jl_scbm"
+                android:text="材质11"
+                android:layout_weight="1"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:editable="false"
+                android:textSize="@dimen/headThreeTextSize"
+                android:textColor="@color/gray_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/jl_scgr"
+                android:text="生产工人"
+                android:layout_weight="1"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:editable="false"
+                android:textSize="@dimen/headThreeTextSize"
+                android:textColor="@color/gray_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_font"
+            android:layout_height="1px" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/jlcx_ll_add"
+        android:layout_marginTop="10dp">
+    </LinearLayout>
+        <ListView
+            android:id="@+id/jl_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+</LinearLayout>
+</LinearLayout>
+<!--</RelativeLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

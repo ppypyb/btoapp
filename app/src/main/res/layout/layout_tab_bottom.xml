@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/dibu"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:weightSum="5"
+    android:paddingBottom="5dp" >
+
+    <TextView
+        android:id="@+id/tv_bottom_home"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="主页"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/headSecondTextSize" 
+        android:textColor="@color/black"
+         />
+
+    <TextView
+        android:id="@+id/tv_bottom_fault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+
+        android:text="业务查询"
+        android:layout_weight="1"
+        android:textSize="@dimen/headSecondTextSize" />
+
+    <TextView
+        android:id="@+id/tv_bottom_query"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/headSecondTextSize"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="工单查询"
+        android:layout_weight="1"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_bottom_count"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:text="统计分析"
+        android:layout_weight="1"
+        android:textSize="@dimen/headSecondTextSize" />
+
+    <TextView
+        android:id="@+id/tv_bottom_msg"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/headSecondTextSize"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="系统消息"
+        android:layout_weight="1"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

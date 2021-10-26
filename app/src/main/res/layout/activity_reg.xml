@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:background="@null"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:layout_marginTop="50dp"
+            android:text="生产销售管理系统"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/reg_name"
+            android:hint="请输入服务器地址"
+            
+            android:layout_marginTop="100dp"
+            android:background="@null"
+            android:textSize="@dimen/headSecondTextSize"
+            android:singleLine="true"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_font" />
+
+        <EditText
+            android:id="@+id/reg_pwd"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:hint="请输入注册码"
+            android:text=""
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="@dimen/headSecondTextSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_font" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/reg_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/btn_save"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="保存"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

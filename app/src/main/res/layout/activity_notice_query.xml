@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bottomsel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <com.ultrapower.tomas.gsinfowinene.common.widget.TabBottomView-->
+<!--        android:id="@+id/eoms_bottom"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        bottomsel:sel_index="2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </com.ultrapower.tomas.gsinfowinene.common.widget.TabBottomView>-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+
+    android:layout_marginBottom="5dp"
+    android:background="@color/white">
+    <include layout="@layout/title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_eoms_query_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/et_eoms_custom"
+            android:background="@mipmap/btn_time1"
+            android:hint="客户名称"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/headSecondTextSize"
+            android:textColor="@color/gray_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/headSecondTextSize"
+            android:textColor="@color/gray_font"
+            android:background="@mipmap/select_with_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/et_eoms_begion"
+            android:layout_weight="1"
+            android:text="开始时间"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:editable="false"
+            android:gravity="center_vertical"
+            android:background="@mipmap/btn_time1"
+            android:drawableRight="@mipmap/arrow_bottom"
+            android:textSize="@dimen/headThreeTextSize"
+            android:textColor="@color/gray_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="至"
+            android:layout_marginLeft="3dp"
+            android:textSize="@dimen/headThreeTextSize"
+            android:textColor="@color/gray_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/et_eoms_end"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:editable="false"
+            android:textSize="@dimen/headThreeTextSize"
+            android:drawableRight="@mipmap/arrow_bottom"
+            android:text="结束时间"
+            android:background="@mipmap/btn_time1"
+            android:textColor="@color/gray_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_eoms_query"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="查询"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@mipmap/btn_chaxun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_font"
+        android:layout_height="1px" />
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+    </android.support.v4.app.FragmentTabHost>
+
+
+    <FrameLayout
+        android:id="@+id/flid_tab_eoms"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
+</RelativeLayout>
